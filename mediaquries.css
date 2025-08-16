@@ -100,4 +100,87 @@
   .text-container {
     text-align: justify;
   }
+}/* ----------- Medium Screens (Tablets) ----------- */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section {
+    padding: 3rem 5%;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ----------- Small Screens (Phones) ----------- */
+@media screen and (max-width: 600px) {
+  #profile {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  article {
+    font-size: 0.95rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
 }
